@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./accset/css/style.css">
+    <link rel="stylesheet" href="./accset/css/responseve.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Profile</title>
 </head>
 <body>
 
@@ -14,17 +15,17 @@
         <div id="header">
             <!-- Begin nav -->
             <ul id="nav">
-                <li><a href="">HOME</a></li>
-                <li><a href="">PROFILE</a></li>
-                <li><a href="">SUMMARY</a></li>
-                <li><a href="">SKILLS</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#content">PROFILE</a></li>
+                <li><a href="#summary">SUMMARY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <li>
                     <a href="">MORE <i class="fa-solid fa-caret-down"></i></a>
                     <div class="subnav">
                         <ul>
-                            <li><a href="">Contact........</a></li>
-                            <li><a href="">Hobbies</a></li>
-                            <li><a href="">...</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Hobbies</a></li>
+                            <li><a href="#"></a></li>
                         </ul>
                     </div>
                 </li>
@@ -36,8 +37,11 @@
             <div class="search-btn">
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
-
             <!-- End search -->
+
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
         </div>
 
@@ -57,22 +61,192 @@
                 <h2 class="heading-section">About</h2>
                 <p class="sub-headding-section">Define yourself</p>
                 <p class="about-section">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div  class="member-list">
+                    <div class="member-item">
+                        <p class="member-name">
+                            BaLoc
+                        </p>
+                        <img src="./accset/img/member/member1.JPEG" class="member-image" alt="">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">
+                            BaLoc
+                        </p>
+                        <img src="./accset/img/member/member1.JPEG" class="member-image" alt="">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">
+                            BaLoc
+                        </p>
+                        <img src="./accset/img/member/member1.JPEG" class="member-image" alt="">
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
             </div>
 
-            <div class="content-container">
-                
-            </div>
+            <div id="summary" class="summary-section">
+                <div class="content-container">
+                    <h2 class="heading-section text-white">SUMMARY</h2>
+                    <p class="sub-headding-section text-white">Define yourself</p>
 
-            <div class="content-container">
-                
-            </div>
+                    <ul class="summary-list">
+                        <li>March 25, 2021 > <strong>Android App</strong> <span class="completed">Completed</span> </li>
+                        <li>June 5, 2022 > <strong>Shoeshop</strong> <span class="pending">Pending</span></li>
+                        <li>July 20, 2022 > <strong>Shops</strong> <span class="completed">Completed</span></li>
+                    </ul>
 
+                    <!-- summary items -->
+                    <div class="row summary-list-img">
+                        <div class="column column-three">
+                            <img src="./accset/img/summary/summary2.png" alt="" class="thumb">
+                            <div class="img-summary-content">
+                                <h2 class="summary-heading">
+                                    Android App
+                                </h2>
+                                <p class="summary-time">March 25, 2021</p>
+                                <div class="desc-wt">
+                                    <p class="summary-desc">Completed the first android project called
+                                        Expense-Manager-App with Java and
+                                        Androidstudio
+                                    </p>
+                                </div>
+                                <button class="summary-btn js-btn-modal">
+                                  View  <!-- <a href="https://github.com/dangloc/Expense-Manager-App">View</a> -->
+                                </button>
+                            </div>   
+                        </div>
+
+                        <div class="column column-three">
+                            <img src="./accset/img/summary/summary1.png" alt="" class="thumb">
+                            <div class="img-summary-content">
+                                <h2 class="summary-heading">
+                                    Shoeshop
+                                </h2>
+                                <p class="summary-time">June 5, 2022</p>
+                                <div class="desc-wt">
+                                    <p class="summary-desc">First php project called shoeshop with php
+                                        mysql and Visual Studio Code.
+                                    </p>
+                                </div>
+                                <button class="summary-btn js-btn-modal">
+                                    View<!-- <a href="https://github.com/dangloc/shoeshop">View</a> -->
+                                </button>
+                            </div>   
+                        </div>
+
+                        <div class="column column-three">
+                            <img src="./accset/img/summary/summary1.png" alt="" class="thumb">
+                            <div class="img-summary-content">
+                                <h2 class="summary-heading">
+                                    Shops
+                                </h2>
+                                <p class="summary-time">July 20, 2022</p>
+                                <div class="desc-wt">
+                                    <p class="summary-desc">Complete shops project with php, mySQL
+                                        and Laravel framework 9x.
+                                    </p>    
+                                </div>
+                                <button class="summary-btn js-btn-modal">
+                                    View
+                                </button>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            
+            <div id="contact" class="content-container">
+                <h2 class="heading-section">CONTACT</h2>
+                <p class="sub-headding-section">Contact me</p>
+                <div class="row contact-content">
+                    <div class="column column-two contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i>DaNang, VietNam</p>
+                        <p><i class="fa-solid fa-square-phone"></i>Phone: +84 765 530 320</p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: Dangbaloc23@mail.com</p>
+                    </div>
+     
+                    <div class="column column-two contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="column column-two">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+     
+                                <div class="column column-two">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+     
+                            </div>
+                            <div class="row margin-top-8">
+                                <div class="column column-full">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+     
+                            <input class="button pull-right margin-top-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="column-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61361.95909487236!2d108.2259014!3d16.0071403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421b365b8af33b%3A0x9c9e59ef1aabd575!2zQ2jhu6MgQ-G6qW0gTOG7hw!5e0!3m2!1svi!2s!4v1658909599396!5m2!1svi!2s" width="100%" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
         <div id="footer">
-
+            <div class="socials-list">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+     
+            <p class="copyright">Powered by <a href="">DangBaLoc</a></p>
+    
         </div>
     </div>
     
+
+    <div class="modal js-modal">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="fa-brands fa-github"></i>
+                Github
+            </header>
+
+            <div class="modal-body">
+                <label for="git" class="modal-label">
+                    <i class="icon-header fa-brands fa-github-alt"></i>
+                    Github for me
+                </label>
+                <input type="text" id="git" class="modal-input"  placeholder="Enter link">
+
+                <label for="email" class="modal-label">
+                    <i class="fa-brands fa-github-alt"></i>
+                    Github for me
+                </label>
+                <input type="email" id="email" class="modal-input"  placeholder="Enter email..">
+
+                <button class="summary-btn">Send</button>
+            </div>
+
+            <footer class="modal-footer">
+                <p>Need <a href=""  class="modal-help">help?</a> </p>
+            </footer>
+        </div>
+    </div>
 </body>
+<script language="javascript" src="./accset/js/modal.js"></script>
 </html>
