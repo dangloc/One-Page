@@ -31,6 +31,7 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    -webkit-appearance: none;
 }
  
 .button:hover {
@@ -85,13 +86,29 @@ html{
     left: 0;
     right: 0;
     z-index: 100;
-    overflow: hidden;
+   
 }
 
+#header .mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu,
 #header .search-btn{
     float: right;
     padding: 0px 21px;
     cursor: pointer;
+}
+
+#header .mobile-menu:hover{
+    background-color: rgb(138, 138, 138) !important;
+}
+
+#header .mobile-menu:hover .head-menu-mobile{
+    color: #000;
 }
 
 #header .search-btn:hover{
@@ -99,6 +116,7 @@ html{
     background-color: #f44336 !important;
 }
 
+#header .head-menu-mobile,
 #header .search-icon{
     color: #fff;
     line-height: 50px;
@@ -161,12 +179,12 @@ html{
     position: relative;
     margin-top: 50px;
     padding-top: 50%;
-    background: url(/accset/img/slider/bg.jpg) top center /cover no-repeat;
+    background: url(/accset/img/slider/bgg.JPEG) top center /cover no-repeat;
 }
 
 #slider .text-content{
     position: absolute;
-    bottom: 45px;
+    bottom: 90px;
     left: 50%;
     /* width: 100%; */
     transform: translateX(-50%);
@@ -176,7 +194,6 @@ html{
 #slider .text-heading {
     font-size: 50px;
     font-weight: 400;
-
 }
 
 #slider .text-description {
@@ -362,10 +379,6 @@ html{
     justify-content: center;
     font-size: 30px;
     color: #fff;
-}
-
-i.fa-brands.fa-github {
-    margin-right: 20px;
 }
 
 .modal-close{
